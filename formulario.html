@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Reciclagem</title>
+    <title>Formulário Reciclagem</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header><h1>Formulario</h1></header>
-    <nav>        
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <nav>
         <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="formulario.html">Formulario</a></li>
-        <li><a href="https://www.instagram.com/ifsp_verde_ofc/">Contato</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="formulario.html">Formulário</a></li>
+            <li><a href="https://www.instagram.com/ifsp_verde_ofc/" target="_blank">Contato</a></li>
         </ul>
     </nav>
-    <main>            
-        <form method="get">
-        Nome: <input type="text" required class="nome-form" id="nome-form"><br><br>
-        Telefone: <input type="number" required class="numero-form" id="numero-form"><br><br>
-        Email: <input type="email" name="" id=""><br><br>
-        <input type="submit" value="Enviar">
-    </form></main>
-    <footer></footer>
-    
+    <main>
+        <form method="get" class="form-container">
+            <label for="name">Nome:</label>
+            <input type="name" required class="form-input" id="nome"><br><br>
+            
+            <label for="tel">Telefone:</label>
+            <input type="tel" required class="form-input" id="telefone"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" required class="form-input" id="email"><br><br>
+
+            <label for="text">Como pode nos ajudar:</label>
+            <textarea name="text" id="text" required class="form-input"></textarea><br><br>
+
+            
+            <input type="submit" value="Enviar" class="form-submit">
+        </form>
+    </main>
+    <footer>&copy; Blog Reciclagem 2024</footer>
 </body>
+
 </html>
